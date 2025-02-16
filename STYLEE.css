@@ -1,0 +1,130 @@
+/* Ensuring the 'about' section is centered */
+.bg-grey-900 {
+  background-color: #1a1a1a;
+}
+
+.navbar-brand {
+  font-size: 2rem !important;
+  font-weight: 900 !important;
+}
+
+.nav-link:hover{
+  font-size: 1.2rem !important;
+  color: #ffcc00;
+}
+
+section {
+  position: relative;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100svh; /* Use min-height for flexibility */
+}
+
+.container h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ffd700, #ffcc00, #ff9900); /* Gradient from left to right */
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 
+    0 0 10px rgba(255, 215, 0, 0.8), /* Gold glow */
+    0 0 20px rgba(255, 215, 0, 0.7),
+    0 0 30px rgba(255, 215, 0, 0.6),
+    0 0 40px rgba(255, 215, 0, 0.5); /* Lavender glow */
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  75% {
+    text-shadow: 
+      0 0 10px rgba(255, 215, 0, 0.8), 
+      0 0 20px rgba(255, 215, 0, 0.7), 
+      0 0 30px rgba(255, 215, 0, 0.6),
+      0 0 40px rgba(255, 215, 0, 0.5);
+  }
+  100% {
+    text-shadow: 
+      0 0 20px rgba(255, 215, 0, 1), 
+      0 0 40px rgba(255, 215, 0, 0.8),
+      0 0 60px rgba(255, 215, 0, 0.5),
+      0 0 80px rgba(255, 215, 0, 0.4);
+  }
+}
+
+section img {
+  max-width: 400px;
+  padding: 10px;
+  margin: auto;
+}
+
+
+#skills p{
+  color:white !important;
+}
+
+#about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #about .col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #about img {
+    max-width: 70%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  /* Ensure the text and images are centered in mobile view */
+  @media (max-width: 767px) {
+    #about .col-12 {
+      text-align: center; /* Center text on smaller screens */
+    }
+    #about img {
+      margin-top: 20px;
+    }
+  }
+  /* For mobile and tablet screens */
+@media (max-width: 767px) {
+  #about {
+    text-align: center; /* Make text center-aligned on mobile */
+  }
+
+  #skills .skill-item {
+    margin-bottom: 20px; /* Adjust skill item spacing for smaller screens */
+  }
+
+  .container h1 {
+    font-size: 2.5rem; /* Smaller font size for heading */
+  }
+  
+  footer .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer .col-6 {
+    text-align: center;
+  }
+}
+
+/* For larger screens (desktops) */
+@media (min-width: 768px) {
+  #about {
+    text-align: left; /* Align text to the left on desktop */
+  }
+
+  .container h1 {
+    font-size: 3rem; /* Larger font size for heading */
+  }
+}
+
+  
