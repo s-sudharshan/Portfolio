@@ -38,10 +38,11 @@
 
   const resume = document.getElementById('resume');
   resume.addEventListener('click', () => {
-    window.open('https://drive.google.com/file/d/1AioBu_QOAgAf0mgUlqVD08raBMljl00I/view?usp=drive_link', '_blank');
+    window.open('https://drive.google.com/file/d/1YrsDJ5j6RIZdX382to6mIaWBwpnaoD5C/view?usp=drive_link', '_blank');
   });
 
 
   
+
 
 
